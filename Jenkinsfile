@@ -23,7 +23,7 @@ pipeline {
         stage('Deploy Project') {
             steps {
                 // Deploy the project by starting the server
-                sh 'nohup npm start &'
+                sh 'npm start'
             }
         }
     }
