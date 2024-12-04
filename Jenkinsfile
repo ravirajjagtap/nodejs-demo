@@ -23,7 +23,8 @@ pipeline {
         stage('Deploy Project') {
             steps {
                 // Deploy the project by starting the server
-                sh 'npm start'
+                sh 'lsof -ti tcp:3000 | xargs -r kill -9'
+                sh 'nohup npm start &'
             }
         }
     }
