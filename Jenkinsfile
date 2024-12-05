@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Pull the repository's dev branch
-                git branch: 'dev', url: 'https://github.com/prathammore0025/nodejs-demo.git'
+                git branch: 'dev', url: 'https://github.com/ravirajjagtap/nodejs-demo.git'
             }
         }
         stage('Install Dependencies') {
